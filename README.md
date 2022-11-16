@@ -1,3 +1,2 @@
 # myshop
-Сreating an online store
-Process
+Сreating an online store In process...
