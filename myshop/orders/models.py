@@ -1,6 +1,7 @@
 from django.db import models
 from shop.models import Product
 
+
 class Order(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
@@ -13,7 +14,7 @@ class Order(models.Model):
     paid = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ('created',)
+        ordering = ('-created',)
 
     def __str__(self):
         return 'Order {}'.format(self.id)
